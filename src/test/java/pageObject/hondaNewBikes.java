@@ -92,9 +92,9 @@ public class hondaNewBikes  extends basePage{
 			
 				
 			}
-			else {
+	/*		else {
 				continue;
-			}
+			}*/
 				
 			}
 		}

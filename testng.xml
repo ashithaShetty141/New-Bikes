@@ -7,7 +7,12 @@
   </listeners>
   
   <test thread-count="3" name="Test">
+  <parameter name="os" value="Windows"/>
+  <parameter name="browser" value="chrome"/>
     <classes>
+      <!--<class name="testCases.TC_001_zigwheelsHome"/>
+     <class name="testCases.TC_002_newHondaBikes"/>
+       <class name="testCases.TC_003_usedCars"/> -->
       <class name="testCases.TC_004_login"/>
     </classes>
   </test> 

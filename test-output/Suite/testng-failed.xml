@@ -10,13 +10,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="UsedCars"/>
-          <include name="login"/>
-          <include name="printAllPopularModel"/>
           <include name="detailsOfAllBikes"/>
-          <include name="viewMoreBikes"/>
           <include name="setup"/>
-          <include name="bikeModel"/>
-          <include name="NewBikesClick"/>
         </methods>
       </class> <!-- testCases.TC_004_login -->
     </classes>

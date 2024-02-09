@@ -27,9 +27,6 @@ public class usedCars extends basePage {
 	@FindBy(xpath = "//div[contains(text(),'Popular Models')]")
 	WebElement scrollPopularModels;
 
-	//@FindBy(xpath = "//ul[@class='zw-sr-secLev usedCarMakeModelList popularModels ml-20 mt-10']")
-	//List<WebElement> allModels;
-
 	@FindBy(xpath = "//ul[@class='zw-sr-secLev usedCarMakeModelList popularModels ml-20 mt-10']//label")
 	List<WebElement> popularModels;
 
@@ -50,12 +47,13 @@ public class usedCars extends basePage {
 	}
 
 	public void clickPopularModel() throws IOException {
+		
 		System.out.println("================================");
-		int i = 0;
+		//int i = 0;
 		ExcelUtility eu= new ExcelUtility(System.getProperty("user.dir")+"\\testdata\\data.xlsx");
-		for(WebElement popularModel : popularModels) {
-			System.out.println(popularModel.getText());
-			eu.setCellData("PopularModels",i,0,popularModel.getText());
+		for(int j=0;j<popularModels.size();j++) {
+			System.out.println(popularModels.get(j).getText());
+			eu.setCellData("PopularModels",j,0,popularModels.get(j).getText());
 			
 		}
 		homeBtn.click();
