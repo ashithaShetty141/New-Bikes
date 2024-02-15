@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">opencart Functional Testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 9, 2024 12:34:13 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 14, 2024 11:02:22 am</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,9 +72,14 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">sanity</a><a class="dropdown-item" href="#">regression</a>
 </ul>
 </li>
 </ul>
@@ -77,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag=""
+          tag="regression"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">NewBikesClick</p>
             <p class="text-sm">
-              <span>12:35:04 pm</span> / <span>00:00:00:386</span>
+              <span>11:02:49 am</span> / <span>00:00:00:709</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,18 +100,19 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:04 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:05 pm</span>
-<span class='badge badge-default'>00:00:00:386</span>
+<h5 class="test-status text-pass">NewBikesClick</h5>
+<span class='badge badge-success'>02.14.2024 11:02:49 am</span>
+<span class='badge badge-danger'>02.14.2024 11:02:49 am</span>
+<span class='badge badge-default'>00:00:00:709</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\NewBikesClick_20240209123504.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\NewBikesClick_20240209123504.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\NewBikesClick_20240214110249.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\NewBikesClick_20240214110249.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -110,7 +121,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:35:04 pm</td>
+        <td>11:02:49 am</td>
         <td>
           NewBikesClick got successfully executed
         </td>
@@ -122,12 +133,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag=""
+          tag="regression"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">bikeModel</p>
             <p class="text-sm">
-              <span>12:35:22 pm</span> / <span>00:00:00:580</span>
+              <span>11:02:52 am</span> / <span>00:00:00:357</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -135,18 +146,19 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:22 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:23 pm</span>
-<span class='badge badge-default'>00:00:00:580</span>
+<h5 class="test-status text-pass">bikeModel</h5>
+<span class='badge badge-success'>02.14.2024 11:02:52 am</span>
+<span class='badge badge-danger'>02.14.2024 11:02:53 am</span>
+<span class='badge badge-default'>00:00:00:357</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\bikeModel_20240209123522.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\bikeModel_20240209123522.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\bikeModel_20240214110252.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\bikeModel_20240214110252.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -155,7 +167,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:35:22 pm</td>
+        <td>11:02:52 am</td>
         <td>
           bikeModel got successfully executed
         </td>
@@ -167,12 +179,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag=""
+          tag="regression"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">viewMoreBikes</p>
             <p class="text-sm">
-              <span>12:35:24 pm</span> / <span>00:00:00:411</span>
+              <span>11:02:53 am</span> / <span>00:00:00:560</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -180,18 +192,19 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:24 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:24 pm</span>
-<span class='badge badge-default'>00:00:00:411</span>
+<h5 class="test-status text-pass">viewMoreBikes</h5>
+<span class='badge badge-success'>02.14.2024 11:02:53 am</span>
+<span class='badge badge-danger'>02.14.2024 11:02:54 am</span>
+<span class='badge badge-default'>00:00:00:560</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\viewMoreBikes_20240209123524.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\viewMoreBikes_20240209123524.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\viewMoreBikes_20240214110253.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\viewMoreBikes_20240214110253.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -200,7 +213,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:35:24 pm</td>
+        <td>11:02:53 am</td>
         <td>
           viewMoreBikes got successfully executed
         </td>
@@ -210,33 +223,34 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag=""
+          tag="regression"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">detailsOfAllBikes</p>
             <p class="text-sm">
-              <span>12:35:28 pm</span> / <span>00:00:00:375</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>11:03:15 am</span> / <span>00:00:01:165</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:28 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:28 pm</span>
-<span class='badge badge-default'>00:00:00:375</span>
+<h5 class="test-status text-pass">detailsOfAllBikes</h5>
+<span class='badge badge-success'>02.14.2024 11:03:15 am</span>
+<span class='badge badge-danger'>02.14.2024 11:03:16 am</span>
+<span class='badge badge-default'>00:00:01:165</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\detailsOfAllBikes_20240209123528.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\detailsOfAllBikes_20240209123528.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\detailsOfAllBikes_20240214110315.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\detailsOfAllBikes_20240214110315.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -244,17 +258,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:35:28 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:03:15 am</td>
         <td>
-          detailsOfAllBikes got failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:35:28 pm</td>
-        <td>
-          C:\Users\2303568\eclipse-workspace\newBikes\testdata\data.xlsx (The process cannot access the file because it is being used by another process)
+          detailsOfAllBikes got successfully executed
         </td>
       </tr>
   </tbody>
@@ -262,33 +269,34 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
-          tag=""
+          tag="regression"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">UsedCars</p>
             <p class="text-sm">
-              <span>12:35:28 pm</span> / <span>00:00:00:381</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>11:03:26 am</span> / <span>00:00:00:431</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:28 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:28 pm</span>
-<span class='badge badge-default'>00:00:00:381</span>
+<h5 class="test-status text-pass">UsedCars</h5>
+<span class='badge badge-success'>02.14.2024 11:03:26 am</span>
+<span class='badge badge-danger'>02.14.2024 11:03:27 am</span>
+<span class='badge badge-default'>00:00:00:431</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\UsedCars_20240209123528.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\UsedCars_20240209123528.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\UsedCars_20240214110326.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\UsedCars_20240214110326.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -296,24 +304,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:35:28 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:03:26 am</td>
         <td>
-          UsedCars got failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:35:28 pm</td>
-        <td>
-          element not interactable: https://www.zigwheels.com/used-car has no size and location
-  (Session info: chrome=120.0.6099.130)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f5e036d7c245b339881910c65222f201, actions {actions=[org.openqa.selenium.interactions.Sequence@1b482cbf]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55226/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f5e036d7c245b339881910c65222f201
+          UsedCars got successfully executed
         </td>
       </tr>
   </tbody>
@@ -323,12 +317,12 @@ Session ID: f5e036d7c245b339881910c65222f201
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag=""
+          tag="regression"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">printAllPopularModel</p>
             <p class="text-sm">
-              <span>12:35:41 pm</span> / <span>00:00:01:780</span>
+              <span>11:03:30 am</span> / <span>00:00:01:677</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -336,18 +330,19 @@ Session ID: f5e036d7c245b339881910c65222f201
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:41 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:43 pm</span>
-<span class='badge badge-default'>00:00:01:780</span>
+<h5 class="test-status text-pass">printAllPopularModel</h5>
+<span class='badge badge-success'>02.14.2024 11:03:30 am</span>
+<span class='badge badge-danger'>02.14.2024 11:03:32 am</span>
+<span class='badge badge-default'>00:00:01:677</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\printAllPopularModel_20240209123541.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\printAllPopularModel_20240209123541.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\printAllPopularModel_20240214110330.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\printAllPopularModel_20240214110330.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -356,7 +351,7 @@ Session ID: f5e036d7c245b339881910c65222f201
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:35:41 pm</td>
+        <td>11:03:30 am</td>
         <td>
           printAllPopularModel got successfully executed
         </td>
@@ -368,12 +363,12 @@ Session ID: f5e036d7c245b339881910c65222f201
         </li>
         <li class="test-item"  status="pass" test-id="7"
           author=""
-          tag=""
+          tag="sanity"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_004_login</p>
+            <p class="name">login</p>
             <p class="text-sm">
-              <span>12:35:51 pm</span> / <span>00:00:00:123</span>
+              <span>11:03:39 am</span> / <span>00:00:00:175</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -381,18 +376,19 @@ Session ID: f5e036d7c245b339881910c65222f201
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCases.TC_004_login</h5>
-<span class='badge badge-success'>02.09.2024 12:35:51 pm</span>
-<span class='badge badge-danger'>02.09.2024 12:35:51 pm</span>
-<span class='badge badge-default'>00:00:00:123</span>
+<h5 class="test-status text-pass">login</h5>
+<span class='badge badge-success'>02.14.2024 11:03:39 am</span>
+<span class='badge badge-danger'>02.14.2024 11:03:40 am</span>
+<span class='badge badge-default'>00:00:00:175</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sanity</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\login_20240209123551.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\login_20240209123551.png">
+<img data-featherlight='C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\login_20240214110339.png' src="C:\Users\2303568\eclipse-workspace\newBikes\ExtentScreenshots\login_20240214110339.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -401,7 +397,7 @@ Session ID: f5e036d7c245b339881910c65222f201
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:35:51 pm</td>
+        <td>11:03:39 am</td>
         <td>
           login got successfully executed
         </td>
@@ -420,30 +416,147 @@ Session ID: f5e036d7c245b339881910c65222f201
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:03:39 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>login</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:02:49 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>NewBikesClick</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:02:52 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>bikeModel</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:02:53 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>viewMoreBikes</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:03:15 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>detailsOfAllBikes</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:03:26 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>UsedCars</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:03:30 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>printAllPopularModel</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 9, 2024 12:34:13 pm</h3>
+<h3>Feb 14, 2024 11:02:22 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 9, 2024 12:35:54 pm</h3>
+<h3>Feb 14, 2024 11:03:41 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>5</h3>
+<h3>7</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -459,12 +572,12 @@ Session ID: f5e036d7c245b339881910c65222f201
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='71%'>
-<b>5</b> tests passed
+<div><small data-tooltip='100%'>
+<b>7</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='28%'><b>2</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -482,10 +595,10 @@ Session ID: f5e036d7c245b339881910c65222f201
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='55%'><b>5</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>7</b> events passed</small></div>
 <div>
-<small data-tooltip='22%'><b>2</b> events failed,
-<b data-tooltip='%'>2</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -501,10 +614,35 @@ Session ID: f5e036d7c245b339881910c65222f201
 </div></div>
 <script>
 var timeline = {
-"testCases.TC_004_login":0.386,"testCases.TC_004_login":0.58,"testCases.TC_004_login":0.411,"testCases.TC_004_login":0.375,"testCases.TC_004_login":0.381,"testCases.TC_004_login":1.78,"testCases.TC_004_login":0.123
+"NewBikesClick":0.709,"bikeModel":0.357,"viewMoreBikes":0.56,"detailsOfAllBikes":1.165,"UsedCars":0.431,"printAllPopularModel":1.677,"login":0.175
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>sanity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>regression</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -533,11 +671,11 @@ var timeline = {
 </tr>
 <tr>
 <td>Operating System</td>
-<td></td>
+<td>Windows</td>
 </tr>
 <tr>
 <td>Browser</td>
-<td></td>
+<td>edge</td>
 </tr>
 </tbody>
 </table></div>
@@ -548,8 +686,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 5,
-failParent: 2,
+passParent: 7,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -565,11 +703,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 5,
-failEvents: 2,
+passEvents: 7,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 2
+infoEvents: 0
 };
 </script>        </div>
       </div>

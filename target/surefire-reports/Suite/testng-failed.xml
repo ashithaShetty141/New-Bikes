@@ -11,8 +11,10 @@
       <class name="testCases.TC_004_login">
         <methods>
           <include name="tearDown"/>
-          <include name="login"/>
+          <include name="viewMoreBikes"/>
           <include name="setup"/>
+          <include name="bikeModel"/>
+          <include name="NewBikesClick"/>
         </methods>
       </class> <!-- testCases.TC_004_login -->
     </classes>

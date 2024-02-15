@@ -49,7 +49,7 @@ public class usedCars extends basePage {
 	public void clickPopularModel() throws IOException {
 		
 		System.out.println("================================");
-		//int i = 0;
+		
 		ExcelUtility eu= new ExcelUtility(System.getProperty("user.dir")+"\\testdata\\data.xlsx");
 		for(int j=0;j<popularModels.size();j++) {
 			System.out.println(popularModels.get(j).getText());
@@ -57,10 +57,6 @@ public class usedCars extends basePage {
 			
 		}
 		homeBtn.click();
-		/*
-		 * for(WebElement checkBox:checkboxes) { checkBox.click(); }
-		 */
-
 	}
 
 	

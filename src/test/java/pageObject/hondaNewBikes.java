@@ -33,7 +33,7 @@ public class hondaNewBikes  extends basePage{
 	public List<WebElement>Bike_Launchdate;
 	
 	
-	@FindBy(xpath="//*[@id=\"Header\"]/div/div[1]/div[1]/a/img")
+	@FindBy(xpath="//a[@class='zw i-b mt-10 pt-2 zw-srch-logo']")
 	WebElement homeBtn;
 	
 	
@@ -88,18 +88,15 @@ public class hondaNewBikes  extends basePage{
 			
 				System.out.println(Bike_Launchdate.get(i).getText());
 				eu.setCellData("HondaNewBikes",i,2,Bike_Launchdate.get(i).getText());
-				System.out.println("-----------------------------------");
-			
-				
-			}
+				System.out.println("-----------------------------------");	
+				}
 	/*		else {
 				continue;
 			}*/
 				
 			}
+			homeBtn.click();
 		}
-	
-		
 		
 	public void goTOHome()
 	{

@@ -32,19 +32,18 @@ public class baseClass {
 	public Logger logger;
 	public Properties p;
 	
-	@BeforeTest
+	@BeforeTest(groups =  {"sanity","regression"})
 	@Parameters({"os" , "browser"})
 	public void setup(String os , String br) throws IOException
 	{
-		//config properties file
-				FileReader file = new FileReader(".//src//test//resources//config.properties");
-				p = new Properties();
-				p.load(file);
-				
-		
-		//loading log4j2 file
+		// Loading properties file
+		FileReader file = new FileReader(".//src//test//resources//config.properties");
+		p = new Properties();
+		p.load(file);	
+		// Loading log4j file
 		logger = LogManager.getLogger(this.getClass());
 		
+		//GRID
 		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
 		{
 			DesiredCapabilities capabilities=new DesiredCapabilities();
@@ -83,7 +82,7 @@ public class baseClass {
 						return;
 			}
 		}
-		driver= new ChromeDriver(); 
+		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
@@ -91,10 +90,8 @@ public class baseClass {
 		
 	}
 	
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
-	}
+	
+	//extend reports screenshots
 	public String captureScreen(String tname) throws IOException {
 		 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -106,5 +103,11 @@ public class baseClass {
 		return targetFilePath;
  
 	}
+	
+	@AfterTest(groups =  {"sanity","regression"})
+	public void tearDown() {
+		driver.quit();
+	}
+	
 	
 }
